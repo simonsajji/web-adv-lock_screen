@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Baloo+Bhaijaan+2&family=Comfortaa&family=Concert+One&family=Dosis:wght@300&family=Genos:wght@300&family=Lato&family=Montserrat:wght@300&family=Pacifico&family=Permanent+Marker&family=Special+Elite&family=Voltaire&display=swap');
+body
+{
+    width:100vw;
+    height:100vh;
+    margin:0;
+    border:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family: 'Lato', sans-serif;
+    
+    
+
+}
+
+#container{
+    
+    border:0.05rem solid rgba(0, 0, 0, 0.95);
+    border-top:4.2rem solid rgba(0, 0, 0, 1);
+    border-bottom:4rem solid rgba(0, 0, 0, 1);
+    border-radius:2.1rem;
+    width:18rem;
+    height:25rem;
+    box-shadow: 0.3rem 0.6rem 0.9rem 0.3rem rgba(0, 0, 0, 0.6);
+    box-shadow: rgba(15, 15, 15, 0.85) 0px 14px 28px, rgba(44, 44, 44, 0.52) 0px 15px 10px;
+    background:url("./bg_lock.jpg");
+    background-size: cover;
+    transition: all 0.4s ease-in-out 0.6s;
+    
+   
+   
+
+
+
+}
+
+/* Lock-screen */
+
+
+
+#container #content1{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+
+    opacity: 1;
+    transition: opacity 0.7s ease-in-out 0.7s;
+    
+   
+   
+
+}
+#pass{
+    
+    font-size:2.4rem;
+    letter-spacing:0.7rem;
+    text-align:center;
+    font-weight:bolder;
+    padding-left: 1rem;
+    
+    margin:0;
+}
+
+#pass_validator{
+    color:rgba(141, 12, 12, 0.8);
+    margin-bottom:0.5rem;
+    opacity:0;
+    transition: opacity 0.2s ease-in-out 0.1s;
+    font-weight: bolder;
+}
+#content1 .row{
+    height: calc(19% - 0.01rem);
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    gap:1rem;
+   
+    
+}
+.row .keys{
+    flex:0.23;
+    border:1px solid black;
+    display: flex;
+    
+    height:80%;
+    border-radius:50%;
+    background-color:rgba(5, 5, 5,0.7);
+    justify-content: center;
+    align-items: center;
+    color:rgb(158, 153, 153);
+    font-size:1.6rem;
+   
+}
+
+/* The content after unlocking with pin */
+
+
+#container #content2{
+    /* display:none; */
+    height:100%;
+    width:100%; 
+    background:url("./bg_cont.jpg");
+    background-size: cover;
+    background-blend-mode: lighten;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out 0.8s;
+
+  
+
+}
+
+#content2 .row{
+    height: calc(20% - 0.02rem);
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:space-around;
+   
+    
+}
+.apps{
+    flex:0.22;
+    border-radius: 0.4rem;
+    height:90%;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+  
+    
+}
+.apps img{
+    width:90%;
+    height:85%;
+
+}
+.apps p{
+    height:8%;
+    color:white;
+    margin:0;
+    font-size:0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+.bg_blur{
+
+    background-color:rgba(255, 255, 255,0.85);
+   
+
+}
